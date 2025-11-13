@@ -1,0 +1,105 @@
+/* Estilos específicos para a página de Contato */
+@import '../css/base_paginas.css';
+/* Importa estilos base */
+
+/* Layout principal */
+
+.esquerda {
+    flex: 2;
+    background: linear-gradient(180deg, #ffffff, #f3f6fb);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 10px rgba(16, 24, 40, 0.06);
+}
+
+.esquerda h1 {
+    margin: 0 0 1rem 0;
+    color: #1a3c8a;
+}
+
+.esquerda>p {
+    margin-bottom: 1.5rem;
+    color: #4a5568;
+}
+
+/* Formulário de contato */
+
+.contact-form .form-field {
+    margin-bottom: 16px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 4px;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    background: #fbfdff;
+    font-size: 0.95rem;
+    color: #0f1720;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1e73be;
+    box-shadow: 0 0 0 3px rgba(30, 115, 190, 0.1);
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form .btn-primary {
+    background: #1e73be;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.contact-form .btn-primary:hover {
+    background: #1a5fa0;
+    transform: translateY(-1px);
+}
+
+/* Painel direito */
+.direita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.direita .topo,
+.direita .baixo {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(16, 24, 40, 0.04);
+}
+
+.direita h3 {
+    margin: 0 0 12px 0;
+    color: #1a3c8a;
+}
+
+.direita p {
+    margin: 0;
+    color: #4a5568;
+    line-height: 1.5;
+}
